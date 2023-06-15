@@ -3,7 +3,7 @@ import streamlit as st
 
 def load_iris_dataset():
     # Function to load the preprocessed dataset
-    file_path = 'C:/Users/aswin/InsightfulClusters/data/Iris.xlsx'
+    file_path = 'data/Iris.xlsx'
     dataset = pd.read_excel(file_path)
     return dataset
 
