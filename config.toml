@@ -1,0 +1,5 @@
+[theme]
+primaryColor = "#FF4B4B"  # Set the primary color to Red
+backgroundColor = "#FFFFFF"  # Set the background color to white
+secondaryBackgroundColor = "#E9EEF7"  # Set the secondary background color to a light gray
+textColor = "#31333F"  # Set the text color to soft black
