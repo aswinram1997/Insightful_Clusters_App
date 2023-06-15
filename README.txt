@@ -1,9 +1,9 @@
 # Insightful_Clusters_App
 
+[My Streamlit app can be found here!](https://aswinram1997-insightful-clusters-app-app-lhh1yn.streamlit.app/)
 
-\[My Streamlit app can be found here!\](<https://aswinram1997-insightful-clusters-app-app-lhh1yn.streamlit.app>)
+![Cluster Visualization](https://github.com/aswinram1997/Insightful_Clusters_App/assets/102771069/781a4864-ecf1-4084-99df-b5120101c5ca)
 
-\!\[Cluster Visualization\](https://github.com/aswinram1997/Insightful_Clusters_App/assets/102771069/781a4864-ecf1-4084-99df-b5120101c5ca)
   
 ## Introduction
 Insightful Clusters is a user-friendly application designed to provide valuable insights from datasets without requiring extensive data science expertise. Built using the Streamlit framework and deployed on Streamlit Sharing, this powerful app offers automated preprocessing, clustering, and interpretation tasks, making it accessible to users with varying levels of technical knowledge.

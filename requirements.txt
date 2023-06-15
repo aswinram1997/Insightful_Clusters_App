@@ -7,3 +7,4 @@ category-encoders==2.6.1
 shap==0.41.0
 streamlit==1.23.1
 xgboost==1.4.2
+ipython==8.12.2
