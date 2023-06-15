@@ -23,7 +23,7 @@ def train_xgboost_model(X_train, y_train):
     }
 
     # Create the XGBoost classifier
-    classifier = xgb.XGBClassifier(eval_metric='error')
+    classifier = xgb.XGBClassifier(eval_metric='error', use_label_encoder=False)
 
     # Create the RandomizedSearchCV object
     random_search = RandomizedSearchCV(classifier, param_distributions=param_grid, n_iter=3, cv=3, scoring='f1_macro', random_state=42)
