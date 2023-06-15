@@ -67,6 +67,6 @@ def apply_shap(dataset, labels, model):
     - shap_values (np.ndarray): The SHAP values.
     """
     explainer = shap.TreeExplainer(model)
-    shap_values = TreeExplainer.shap_values(dataset)
+    shap_values = explainer.shap_values(dataset)
     return shap_values
 
