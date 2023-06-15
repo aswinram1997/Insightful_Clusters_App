@@ -108,6 +108,7 @@ if algorithm == "Automated Clustering":
 
                 # Step 14: Apply SHAP on the clustered dataset to interpret the meaning of each cluster
                 shap_values = apply_shap(dataset, labels, model)
+                st.write('error')
 
             except Exception as e:
                  st.error("For successful dataset loading, consider the following steps:"
