@@ -371,9 +371,10 @@ else:
 
                 # Step 13: Perform Principal Component Analysis (PCA) on the dataset for visualization
                 pca_result = perform_pca(dataset, labels)
-
+                st.write('error1')
                 # Step 14: Apply SHAP on the clustered dataset to interpret the meaning of each cluster
                 shap_values = apply_shap(dataset, labels, model)
+                st.write('error2')
 
             except Exception as e:
                 st.error("Error in algorithm execution")
