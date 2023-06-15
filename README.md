@@ -2,7 +2,9 @@
 
 [My Streamlit app can be found here!](https://aswinram1997-insightful-clusters-app-app-lhh1yn.streamlit.app/)
 
-![Cluster Visualization](https://github.com/aswinram1997/Insightful_Clusters_App/assets/102771069/781a4864-ecf1-4084-99df-b5120101c5ca)
+<p align="center">
+  <img src="https://github.com/aswinram1997/Insightful_Clusters_App/assets/102771069/781a4864-ecf1-4084-99df-b5120101c5ca" alt="Cluster Visualization">
+</p>
 
   
 ## Introduction
