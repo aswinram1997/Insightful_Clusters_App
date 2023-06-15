@@ -259,22 +259,12 @@ if algorithm == "Automated Clustering":
         st.caption("A SHAP summary plot shows the importance of different features for each cluster. The plot ranks the features based on their contribution to each cluster. Features with higher SHAP values on the plot have a stronger influence on that cluster. By looking at the plot, you can understand which features are more important in distinguishing and defining the characteristics of each cluster.")
         
         if dataset is not None:
-            # Create SHAP Summary Plot
-            # Create a list of class labels
-            class_labels = np.unique(labels)
-
-            # Initialize SHAP explainer with the XGBoost model
-            explainer = shap.Explainer(model)  # Replace `model` with your XGBoost model
 
             # Create a SHAP summary plot
             # Create a list of class labels
             class_labels = np.unique(labels)
 
-            # Initialize SHAP explainer with the XGBoost model
-            explainer = shap.Explainer(model)  # Replace `model` with your XGBoost model
 
-            # Create a SHAP summary plot
-            shap_values = explainer.shap_values(dataset)
             fig, ax = plt.subplots(figsize=(8, 5))  # Adjust the figsize as needed
             shap.summary_plot(shap_values, dataset, class_names=class_labels, color_bar=True)
 
@@ -528,22 +518,12 @@ else:
         st.caption("A SHAP summary plot shows the importance of different features for each cluster. The plot ranks the features based on their contribution to each cluster. Features with higher SHAP values on the plot have a stronger influence on that cluster. By looking at the plot, you can understand which features are more important in distinguishing and defining the characteristics of each cluster.")
         
         if dataset is not None:
-            # Create SHAP Summary Plot
-            # Create a list of class labels
-            class_labels = np.unique(labels)
-
-            # Initialize SHAP explainer with the XGBoost model
-            explainer = shap.Explainer(model)  # Replace `model` with your XGBoost model
 
             # Create a SHAP summary plot
             # Create a list of class labels
             class_labels = np.unique(labels)
 
-            # Initialize SHAP explainer with the XGBoost model
-            explainer = shap.Explainer(model)  # Replace `model` with your XGBoost model
-
             # Create a SHAP summary plot
-            shap_values = explainer.shap_values(dataset)
             fig, ax = plt.subplots(figsize=(8, 5))  # Adjust the figsize as needed
             shap.summary_plot(shap_values, dataset, class_names=class_labels, color_bar=True)
 
