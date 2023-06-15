@@ -114,12 +114,12 @@ if algorithm == "Automated Clustering":
          "\n\n1. Clean your data: Identify and resolve inconsistencies, errors, and missing values."
          "\n\n2. Verify data types: Ensure correct assignment of numeric, categorical, and datetime data types."
          "\n\n3. Remove long string variables: Consider removing features with excessively long strings."
-         "\n\nTaking these steps will increase the likelihood of smoothly loading the dataset.")
+         "\n\nTaking these steps will increase the likelihood of smoothly loading the dataset." + str(e))
         else:
             st.caption('Please select a dataset to proceed.')
 
     except Exception as e:
-        st.error("Error in loading dataset")
+        st.error("Error in loading dataset"+ str(e))
        
 
 
