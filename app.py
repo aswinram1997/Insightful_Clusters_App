@@ -107,7 +107,7 @@ if algorithm == "Automated Clustering":
                 pca_result = perform_pca(dataset, labels)
                 st.write('pca')
                 # Step 14: Apply SHAP on the clustered dataset to interpret the meaning of each cluster
-                shap_values, dataset_with_labels = apply_shap(dataset, labels, model)
+                shap_values = apply_shap(dataset, labels, model)
                 st.write('shap')
 
             except Exception as e:
@@ -264,7 +264,7 @@ if algorithm == "Automated Clustering":
             # Create a SHAP summary plot
 
             fig, ax = plt.subplots(figsize=(8, 5))  # Adjust the figsize as needed
-            shap.summary_plot(shap_values, dataset_with_labels)
+            shap.summary_plot(shap_values, dataset)
 
             # Set the figure background color to transparent
             fig.patch.set_alpha(0.0)
@@ -371,7 +371,7 @@ else:
                 pca_result = perform_pca(dataset, labels)
 
                 # Step 14: Apply SHAP on the clustered dataset to interpret the meaning of each cluster
-                shap_values, dataset_with_labels = apply_shap(dataset, labels, model)
+                shap_values = apply_shap(dataset, labels, model)
 
             except Exception as e:
                 st.error("Error in algorithm execution")
@@ -521,7 +521,7 @@ else:
 
             # Create a SHAP summary plot
             fig, ax = plt.subplots(figsize=(8, 5))  # Adjust the figsize as needed
-            shap.summary_plot(shap_values, dataset_with_labels)
+            shap.summary_plot(shap_values, dataset)
 
             # Set the figure background color to transparent
             fig.patch.set_alpha(0.0)
