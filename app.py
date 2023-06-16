@@ -262,12 +262,12 @@ if algorithm == "Automated Clustering":
         if dataset is not None:
 
             # Create a SHAP summary plot
-            # Create a list of class labels
-            class_labels = np.unique(labels)
-
+            # Create a DataFrame with cluster labels and original dataset features
+            dataset_with_labels = dataset.copy()
+            dataset_with_labels['labels'] = labels
 
             fig, ax = plt.subplots(figsize=(8, 5))  # Adjust the figsize as needed
-            shap.summary_plot(shap_values, dataset, class_names=class_labels, color_bar=True)
+            shap.summary_plot(shap_values, dataset_with_labels, color_bar=True)
 
             # Set the figure background color to transparent
             fig.patch.set_alpha(0.0)
@@ -521,12 +521,13 @@ else:
         if dataset is not None:
 
             # Create a SHAP summary plot
-            # Create a list of class labels
-            class_labels = np.unique(labels)
+            # Create a DataFrame with cluster labels and original dataset features
+            dataset_with_labels = dataset.copy()
+            dataset_with_labels['labels'] = labels
 
             # Create a SHAP summary plot
             fig, ax = plt.subplots(figsize=(8, 5))  # Adjust the figsize as needed
-            shap.summary_plot(shap_values, dataset, class_names=class_labels, color_bar=True)
+            shap.summary_plot(shap_values, dataset_with_labels, color_bar=True)
 
             # Set the figure background color to transparent
             fig.patch.set_alpha(0.0)

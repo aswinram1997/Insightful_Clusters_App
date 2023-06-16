@@ -67,7 +67,15 @@ def apply_shap(dataset, labels, model):
     Returns:
     - shap_values (np.ndarray): The SHAP values.
     """
-    explainer = shap.TreeExplainer(model)
-    shap_values = explainer.shap_values(dataset)
+    # Create a DataFrame with cluster labels and original dataset features
+    dataset_with_labels = dataset.copy()
+    dataset_with_labels['labels'] = labels
+    
+    # Create the SHAP explainer using the modified dataset
+    explainer = shap.TreeExplainer(model, data=dataset_with_labels)
+    
+    # Compute the SHAP values
+    shap_values = explainer.shap_values(dataset_with_labels)
+    
     return shap_values
 
