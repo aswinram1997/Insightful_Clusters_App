@@ -70,7 +70,7 @@ def apply_shap(dataset, labels, model):
     
     # Create the SHAP explainer using the modified dataset
     unique_labels = np.unique(labels).tolist()
-    explainer = shap.Explainer(model, output_names = unique_labels)
+    explainer = shap.TreeExplainer(model, output_names = unique_labels)
     
     # Compute the SHAP values
     shap_values = explainer.shap_values(dataset)
