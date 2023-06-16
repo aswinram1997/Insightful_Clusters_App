@@ -107,7 +107,7 @@ if algorithm == "Automated Clustering":
                 pca_result = perform_pca(dataset, labels)
                 st.write('pca')
                 # Step 14: Apply SHAP on the clustered dataset to interpret the meaning of each cluster
-                shap_values = apply_shap(dataset, labels, model)
+                shap_values, dataset_with_labels = apply_shap(dataset, labels, model)
                 st.write('shap')
 
             except Exception as e:
@@ -115,7 +115,7 @@ if algorithm == "Automated Clustering":
          "\n\n1. Clean your data: Identify and resolve inconsistencies, errors, and missing values."
          "\n\n2. Verify data types: Ensure correct assignment of numeric, categorical, and datetime data types."
          "\n\n3. Remove long string variables: Consider removing features with excessively long strings."
-         "\n\nTaking these steps will increase the likelihood of smoothly loading the dataset." + str(e))
+         "\n\nTaking these steps will increase the likelihood of smoothly loading the dataset. " + str(e))
         else:
             st.caption('Please select a dataset to proceed.')
 
@@ -262,12 +262,9 @@ if algorithm == "Automated Clustering":
         if dataset is not None:
 
             # Create a SHAP summary plot
-            # Create a DataFrame with cluster labels and original dataset features
-            dataset_with_labels = dataset.copy()
-            dataset_with_labels['labels'] = labels
 
             fig, ax = plt.subplots(figsize=(8, 5))  # Adjust the figsize as needed
-            shap.summary_plot(shap_values, dataset_with_labels, color_bar=True)
+            shap.summary_plot(shap_values, dataset_with_labels)
 
             # Set the figure background color to transparent
             fig.patch.set_alpha(0.0)
@@ -374,7 +371,7 @@ else:
                 pca_result = perform_pca(dataset, labels)
 
                 # Step 14: Apply SHAP on the clustered dataset to interpret the meaning of each cluster
-                shap_values = apply_shap(dataset, labels, model)
+                shap_values, dataset_with_labels = apply_shap(dataset, labels, model)
 
             except Exception as e:
                 st.error("Error in algorithm execution")
@@ -521,13 +518,10 @@ else:
         if dataset is not None:
 
             # Create a SHAP summary plot
-            # Create a DataFrame with cluster labels and original dataset features
-            dataset_with_labels = dataset.copy()
-            dataset_with_labels['labels'] = labels
 
             # Create a SHAP summary plot
             fig, ax = plt.subplots(figsize=(8, 5))  # Adjust the figsize as needed
-            shap.summary_plot(shap_values, dataset_with_labels, color_bar=True)
+            shap.summary_plot(shap_values, dataset_with_labels)
 
             # Set the figure background color to transparent
             fig.patch.set_alpha(0.0)

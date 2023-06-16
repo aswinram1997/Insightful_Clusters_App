@@ -140,6 +140,4 @@ def perform_final_clustering(dataset, algorithm, k):
         labels = kmeans_clustering(dataset, k)
     elif algorithm == 'Agglomerative':
         labels = agglomerative_clustering(dataset, k)
-    elif algorithm == 'OPTICS':
-        labels = agglomerative_clustering(dataset)
     return labels

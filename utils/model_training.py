@@ -15,7 +15,7 @@ def train_xgboost_model(X_train, y_train):
     """
 
     # Create the XGBoost classifier
-    model = xgb.XGBClassifier(eval_metric='error', use_label_encoder=False)
+    model = xgb.XGBClassifier(eval_metric='logloss', use_label_encoder=False)
 
     # Fit the model to the training data
     model.fit(X_train, y_train)
