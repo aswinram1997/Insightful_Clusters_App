@@ -16,8 +16,7 @@ def train_xgboost_model(X_train, y_train):
 
     # Define the parameter grid for random search
     param_grid = {
-        'max_depth': [3, 6],
-        'learning_rate': [0.1, 0.01],
+        'max_depth': [3, 6]
     }
 
     # Create the XGBoost classifier
