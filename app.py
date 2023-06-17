@@ -98,10 +98,11 @@ if algorithm == "Automated Clustering":
                 X_train, X_test, y_train, y_test = train_test_split(dataset, labels, test_size=0.2, random_state=42)
 
                 # Step 11: Train an XGBoost model on the training set
-   
+                model = train_xgboost_model(X_train, y_train)
+
                 # Step 12: Calculate the F1 score on the testing set
                 f1 = calculate_f1_score(model, X_test, y_test)
-   
+
                 # Step 13: Perform Principal Component Analysis (PCA) on the dataset for visualization
                 pca_result = perform_pca(dataset, labels)
 
