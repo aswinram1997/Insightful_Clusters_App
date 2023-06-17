@@ -31,7 +31,7 @@ Insightful Clusters consists of the following modules:
 
 - Automatic and Manual Clustering: Insightful Clusters offers automatic and manual clustering options. Automatic clustering applies advanced algorithms (K-means and Agglomerative Clustering) to identify patterns. Manual clustering provides more control over the process, allowing users to select algorithms and specify the number of clusters.
 
-- XGBoost Model for Cluster Interpretation: Insightful Clusters employs an XGBoost classification model to interpret clusters. The model is fine-tuned using random cross-validation. Users can understand the key features driving clustering results and gain deeper insights into their data.
+- XGBoost Model for Cluster Interpretation: Insightful Clusters employs an XGBoost classification model to interpret clusters. Users can understand the key features driving clustering results and gain deeper insights into their data. However, it must be acknowledged that due to the real-time nature of the training process, the model does not undergo fine-tuning of hyperparameters specifically aimed at reducing training time. 
 
 - SHAP Summary Plot: Insightful Clusters provides a SHAP summary plot to aid in XGBoost model interpretation. This plot visualizes feature importance and contributions to each cluster. Users can analyze the plot to understand the impact of features on cluster formation.
 

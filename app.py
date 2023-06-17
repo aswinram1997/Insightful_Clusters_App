@@ -357,22 +357,22 @@ else:
 
                 # Step 9: Evaluate the clustering results using Silhouette Score, Davies-Bouldin Index, and Calinski-Harabasz Index
                 silhouette, db, ch = evaluate_clustering(dataset, labels)
-                st.write('error')
+
                 # Step 10: Split the dataset into training and testing sets (80/20 split)
                 X_train, X_test, y_train, y_test = train_test_split(dataset, labels, test_size=0.2, random_state=42)
-                st.write('error')
+
                 # Step 11: Train an XGBoost model on the training set
                 model = train_xgboost_model(X_train, y_train)
-                st.write('error')
+
                 # Step 12: Calculate the F1 score on the testing set
                 f1 = calculate_f1_score(model, X_test, y_test)
-                st.write('error')
+
                 # Step 13: Perform Principal Component Analysis (PCA) on the dataset for visualization
                 pca_result = perform_pca(dataset, labels)
-                st.write('error')
+
                 # Step 14: Apply SHAP on the clustered dataset to interpret the meaning of each cluster
                 shap_values = apply_shap(dataset, labels, model)
-                st.write('error')
+
             except Exception as e:
                 st.error("Error in algorithm execution")
         else:
