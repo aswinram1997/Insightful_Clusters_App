@@ -1,14 +1,14 @@
 # Insightful_Clusters_App
 
-[My Streamlit app can be found here!](aswinram1997-insightful-clusters-app-app-ttcgl5)
+[My Streamlit app can be found here!](https://aswinram1997-insightful-clusters-app-app-ttcgl5.streamlit.app)
 
 <p align="center">
-  <img src="aswinram1997-insightful-clusters-app-app-ttcgl5" alt="Cluster Visualization">
+  <img src="![Cluster Visualization](https://github.com/aswinram1997/Insightful_Clusters_App/assets/102771069/b95b1228-0f04-4990-b6c0-9e10cc57ef50)" alt="Cluster Visualization">
 </p>
 
   
 ## Introduction
- [Insightful Clusters](https://aswinram1997-insightful-clusters-app-app-lhh1yn.streamlit.app/) is a user-friendly application designed to provide valuable insights from datasets without requiring extensive data science expertise. Built using the Streamlit framework and deployed on Streamlit Sharing, this powerful app offers automated preprocessing, clustering, and interpretation tasks, making it accessible to users with varying levels of technical knowledge.
+ [Insightful Clusters](https://aswinram1997-insightful-clusters-app-app-ttcgl5.streamlit.app) is a user-friendly application designed to provide valuable insights from datasets without requiring extensive data science expertise. Built using the Streamlit framework and deployed on Streamlit Sharing, this powerful app offers automated preprocessing, clustering, and interpretation tasks, making it accessible to users with varying levels of technical knowledge.
 
 ## Why Insightful Clusters?
 Extracting meaningful insights from complex datasets can be challenging, especially for non-data scientists. Insightful Clusters addresses this need by offering a simplified solution that automates key processes, enabling users to uncover hidden patterns and gain valuable insights with ease. Insightful Clusters caters to a both technical and non-technical users. Insightful Clusters has diverse applications in fields like marketing, finance, healthcare, social sciences, and e-commerce. It enables customer segmentation in marketing, aids investment decision-making in finance, supports patient profiling in healthcare, assists social science research, and enhances customer analysis in e-commerce.
