@@ -74,41 +74,40 @@ if algorithm == "Automated Clustering":
                 dataset = handle_date_feature(dataset, date_columns)
                 dataset = normalize_dataset(dataset, numerical_columns)
                 dataset, encoded_columns = encode_categorical_features(dataset, categorical_columns)
-                st.write('preprocess')
+
                 # Step 4: Define the range of k values for clustering
                 k_values_range = define_k_values_range()
-                st.write('k range')
+
                 # Step 5: Perform clustering and evaluation for different algorithms and k values
                 evaluation_scores = perform_clustering_evaluation(dataset, k_values_range)
-                st.write('eval score')
+
                 # Step 6: Count votes for each algorithm and k value combination
                 votes = count_votes(evaluation_scores)
-                st.write('votes')
+
                 # Step 7: Select the best combination based on majority voting
                 best_combination = select_best_combination(votes, evaluation_scores)
-                st.write('best combo')
+   
                 # Step 8: Perform final clustering with the best algorithm and k value combination
                 algorithm, k = best_combination
                 labels = perform_final_clustering(dataset, algorithm, k)
-                st.write('label')
+   
                 # Step 9: Evaluate the clustering results using Silhouette Score, Davies-Bouldin Index, and Calinski-Harabasz Index
                 silhouette, db, ch = evaluate_clustering(dataset, labels)
-                st.write('s,d,c')
+      
                 # Step 10: Split the dataset into training and testing sets (80/20 split)
                 X_train, X_test, y_train, y_test = train_test_split(dataset, labels, test_size=0.2, random_state=42)
-                st.write('split')
+
                 # Step 11: Train an XGBoost model on the training set
-                model = train_xgboost_model(X_train, y_train)
-                st.write('train')
+   
                 # Step 12: Calculate the F1 score on the testing set
                 f1 = calculate_f1_score(model, X_test, y_test)
-                st.write('f1')
+   
                 # Step 13: Perform Principal Component Analysis (PCA) on the dataset for visualization
                 pca_result = perform_pca(dataset, labels)
-                st.write('pca')
+
                 # Step 14: Apply SHAP on the clustered dataset to interpret the meaning of each cluster
                 shap_values = apply_shap(dataset, labels, model)
-                st.write('shap')
+
 
             except Exception as e:
                  st.error("For successful dataset loading, consider the following steps:"

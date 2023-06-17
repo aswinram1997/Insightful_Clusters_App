@@ -1,4 +1,4 @@
-from sklearn.cluster import KMeans, AgglomerativeClustering, OPTICS
+from sklearn.cluster import KMeans, AgglomerativeClustering
 from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score
 import numpy as np
 
