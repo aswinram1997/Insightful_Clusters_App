@@ -3,7 +3,7 @@
 [My Streamlit app can be found here!](https://aswinram1997-insightful-clusters-app-app-ttcgl5.streamlit.app)
 
 <p align="center">
-  <img src="![Cluster Visualization](https://github.com/aswinram1997/Insightful_Clusters_App/assets/102771069/b95b1228-0f04-4990-b6c0-9e10cc57ef50)" alt="Cluster Visualization">
+  <img src="![Cluster Visualization](https://github.com/aswinram1997/Insightful_Clusters_App/assets/102771069/aa779f20-e27d-4fa2-aa01-37f23ea7bac6)" alt="Cluster Visualization">
 </p>
 
   
