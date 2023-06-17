@@ -62,11 +62,11 @@ def load_dataset(dataset_name):
         # Load Mall Customer dataset
         dataset = load_diabetes_dataset()
         return dataset
-    elif dataset_name == 'Blueberry Growth Characteristics':
+    elif dataset_name == 'Blueberry Growth Character Clustering':
         # Load Mall Customer dataset
         dataset = load_wild_blueberry_yield_dataset()
         return dataset
-    elif dataset_name == 'Sleep, Health & Lifestyle':
+    elif dataset_name == 'Sleep, Health & Lifestyle Clustering':
         # Load Mall Customer dataset
         dataset = load_sleep_health_lifestyle_dataset()
         return dataset
@@ -74,7 +74,7 @@ def load_dataset(dataset_name):
         # Load Mall Customer dataset
         dataset = load_automobile_customer_segmentation_dataset()
         return dataset
-    elif dataset_name == 'Custom':
+    elif dataset_name == 'Custom Dataset':
         # Custom dataset upload
         uploaded_file = st.file_uploader('Upload your dataset (Excel format)', type='xlsx')
         if uploaded_file is not None:

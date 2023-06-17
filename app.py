@@ -31,7 +31,7 @@ st.sidebar.title("Navigation")
 algorithm = st.sidebar.selectbox("Please choose your strategy:", ["Automated Clustering", "Manual Clustering"])
 
 # dataset options
-dataset_options = ['Diabetes Patient Clustering', 'Automobile Customer Segmentation', 'Mall Shopper Segmentation', 'Blueberry Growth Characteristics', 'Sleep, Health & Lifestyle', 'Iris Flowers Clustering', 'Wine Varieties Clustering', 'Custom']
+dataset_options = ['Diabetes Patient Clustering', 'Mall Shopper Segmentation', 'Blueberry Growth Character Clustering', 'Automobile Customer Segmentation', 'Sleep, Health & Lifestyle Clustering', 'Iris Flowers Clustering', 'Wine Varieties Clustering', 'Custom Dataset']
 
 
 
