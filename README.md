@@ -1,7 +1,10 @@
 # Insightful_Clusters_App
 
 [My Streamlit app can be found here!](https://aswinram1997-insightful-clusters-app-app-ttcgl5.streamlit.app)
-  
+
+![sharon-pittaway-iMdsjoiftZo-unsplash (1)](https://github.com/aswinram1997/DataScience_Portfolio/assets/102771069/822fd0ca-a5d6-419c-a5b2-61c3da791034)
+
+
 ## Introduction
  [Insightful Clusters](https://aswinram1997-insightful-clusters-app-app-ttcgl5.streamlit.app) is a user-friendly application designed to provide valuable insights from datasets without requiring extensive data science expertise. Built using the Streamlit framework and deployed on Streamlit Sharing, this powerful app offers automated preprocessing, clustering, and interpretation tasks, making it accessible to users with varying levels of technical knowledge.
 
