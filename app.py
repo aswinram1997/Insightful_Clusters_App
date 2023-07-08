@@ -131,7 +131,7 @@ if algorithm == "Automated Clustering":
     # Algorithm Performance Dashboard
     try:
         st.subheader("*Algorithm Performance Dashboard*")
-        st.caption("Discover our meticulously curated clustering algorithm and K-value selection, showcasing exceptional outcomes on your dataset through the utilization of evaluation metrics like the Silhouette Score, DB Index, and CH Index. These metrics holistically assess the clustering algorithm's efficacy, encompassing cluster separation, compactness, and cohesion, providing a comprehensive evaluation of its performance.")
+        st.caption("Explore the meticulously curated clustering algorithm and K-value selection, showcasing exceptional outcomes on your dataset through the utilization of evaluation metrics like the Silhouette Score, DB Index, and CH Index. These metrics holistically assess the clustering algorithm's efficacy, encompassing cluster separation, compactness, and cohesion, providing a comprehensive evaluation of its performance.")
        
         
         if dataset is not None:
@@ -388,7 +388,7 @@ else:
 
     try:
         st.subheader("*Algorithm Performance Dashboard*")
-        st.caption("Discover our meticulously curated clustering algorithm and K-value selection, showcasing exceptional outcomes on your dataset through the utilization of evaluation metrics like the Silhouette Score, DB Index, and CH Index. These metrics holistically assess the clustering algorithm's efficacy, encompassing cluster separation, compactness, and cohesion, providing a comprehensive evaluation of its performance.")
+        st.caption("Explore the meticulously curated clustering algorithm and K-value selection, showcasing exceptional outcomes on your dataset through the utilization of evaluation metrics like the Silhouette Score, DB Index, and CH Index. These metrics holistically assess the clustering algorithm's efficacy, encompassing cluster separation, compactness, and cohesion, providing a comprehensive evaluation of its performance.")
         
         if dataset is not None:
             # Set up the layout
