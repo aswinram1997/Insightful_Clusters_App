@@ -24,7 +24,7 @@ from utils.model_interpretation import perform_pca, create_pca_chart, apply_shap
 
 # Set Title
 st.title("Insightful Clusters✨")
-st.caption("Insightful Clusters revolutionizes cluster segmentation and interpretation for any dataset. Our seamless and user-friendly solution leverages cutting-edge ML algorithms to automatically identify distinct groups or clusters in your data. Simply upload your dataset, and let the app handle the entire clustering process. Visualize and interpret the clusters effortlessly, gaining valuable insights. Whether you're analyzing customer data, market research, or any dataset, Insightful Clusters streamlines cluster segmentation and interpretation, empowering you to make data-driven decisions effortlessly.")
+st.caption("Insightful Clusters revolutionizes cluster segmentation and interpretation for any dataset. This seamless and user-friendly solution leverages cutting-edge ML algorithms to automatically identify distinct groups or clusters in your data. Simply upload your dataset, and let the app handle the entire clustering process. Visualize and interpret the clusters effortlessly, gaining valuable insights. Whether you're analyzing customer data, market research, or any dataset, Insightful Clusters streamlines cluster segmentation and interpretation, empowering you to make data-driven decisions effortlessly.")
 
 # Add a sidebar for navigation
 st.sidebar.title("Navigation")
@@ -131,7 +131,7 @@ if algorithm == "Automated Clustering":
     # Algorithm Performance Dashboard
     try:
         st.subheader("*Algorithm Performance Dashboard*")
-        st.caption("Explore our carefully chosen clustering algorithm and K value selection, which have demonstrated superior results on your dataset by utilizing evaluation metrics such as Silhouette Score, DB Index, and CH Index. These metrics comprehensively evaluate the effectiveness of the clustering algorithm in terms of cluster separation, compactness, and cohesion.")
+        st.caption("Discover our meticulously curated clustering algorithm and K-value selection, showcasing exceptional outcomes on your dataset through the utilization of evaluation metrics like the Silhouette Score, DB Index, and CH Index. These metrics holistically assess the clustering algorithm's efficacy, encompassing cluster separation, compactness, and cohesion, providing a comprehensive evaluation of its performance.")
        
         
         if dataset is not None:
@@ -388,7 +388,7 @@ else:
 
     try:
         st.subheader("*Algorithm Performance Dashboard*")
-        st.caption("Explore our carefully chosen clustering algorithm and K value selection, which have demonstrated superior results on your dataset by utilizing evaluation metrics such as Silhouette Score, DB Index, and CH Index. These metrics comprehensively evaluate the effectiveness of the clustering algorithm in terms of cluster separation, compactness, and cohesion.")
+        st.caption("Discover our meticulously curated clustering algorithm and K-value selection, showcasing exceptional outcomes on your dataset through the utilization of evaluation metrics like the Silhouette Score, DB Index, and CH Index. These metrics holistically assess the clustering algorithm's efficacy, encompassing cluster separation, compactness, and cohesion, providing a comprehensive evaluation of its performance.")
         
         if dataset is not None:
             # Set up the layout
