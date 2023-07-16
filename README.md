@@ -34,7 +34,7 @@ Insightful Clusters consists of the following modules:
 - SHAP Summary Plot: Insightful Clusters provides a SHAP summary plot to aid in XGBoost model interpretation. This plot visualizes feature importance and contributions to each cluster. Users can analyze the plot to understand the impact of features on cluster formation.
 
 ## Conclusion
-In conclusion, Insightful Clusters is a user-friendly and powerful application that simplifies data clustering and interpretation, providing valuable insights for users across various domains. Its impact is evident through its ease of use, time efficiency, and interpretability. With applications in marketing, finance, healthcare, social sciences, and e-commerce, Insightful Clusters empowers users to uncover hidden patterns, make informed decisions, and drive success in their respective fields. 
+In conclusion, Insightful Clusters is a user-friendly and powerful application that simplifies data clustering and interpretation, providing valuable insights for users across various domains. Its impact is evident through its ease of use, time efficiency, and interpretability. Insightful Clusters empowers users to uncover hidden patterns, make informed decisions, and drive success in their respective fields. 
 
 ## Limitations and Future Directions
 Insightful Clusters, while a powerful tool, has a few limitations that can guide its future development:
